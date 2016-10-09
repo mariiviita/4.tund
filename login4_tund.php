@@ -153,7 +153,7 @@
 	
 	$error="";
 	//kontrollin, et kasutaja täitis välja ja võib sisse logida
-	if(isset($POST["loginEmail"]) && isset($POST["loginPassword"]) && !empty($POST["loginEmail"]) && !empty($POST["loginPassword"])){
+	if(isset($_POST["loginEmail"]) && isset($_POST["loginPassword"]) && !empty($_POST["loginEmail"]) && !empty($POST["loginPassword"])){
 	
 		
 	//login sisse
@@ -178,7 +178,7 @@
 		
 			<br><br>
 		
-			<input name="LoginPassword" type="password" placeholder="Parool"><?php echo $LoginPasswordError;?>
+			<input name="LoginPassword" type="password" placeholder="Parool" value="<?=$LoginPassword;?>"> <?php echo $LoginPasswordError;?>
 		
 			<br><br>
 		
