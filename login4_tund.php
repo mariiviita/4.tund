@@ -153,11 +153,11 @@
 	
 	$error="";
 	//kontrollin, et kasutaja täitis välja ja võib sisse logida
-	if(isset($_POST["loginEmail"]) && isset($_POST["loginPassword"]) && !empty($_POST["loginEmail"]) && !empty($POST["loginPassword"])){
+	if(isset($_POST["LoginEmail"]) && isset($_POST["LoginPassword"]) && !empty($_POST["LoginEmail"]) && !empty($_POST["LoginPassword"])){
 	
 		
 	//login sisse
-		$error=login($_POST["loginEmail"], $_POST["loginPassword"]);
+		$error=login($_POST["LoginEmail"], $_POST["LoginPassword"]);
 		
 	}
 ?>
